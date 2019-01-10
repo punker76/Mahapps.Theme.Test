@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using MahApps.Metro;
 
 namespace MahApps.Prism.Test.Windows
 {
@@ -10,6 +11,8 @@ namespace MahApps.Prism.Test.Windows
         public MainWindow()
         {
             InitializeComponent();
+
+            this.Loaded += (sender, args) => { ThemeManager.ChangeAppStyle(Application.Current, ThemeManager.GetAccent("CustomAccent"), ThemeManager.GetAppTheme("BaseDark")); };
         }
     }
 }

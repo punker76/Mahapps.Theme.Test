@@ -7,10 +7,9 @@
         xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    
+
     <Frame
         x:Name="MainFrame"
         NavigationUIVisibility="Hidden"
         Source="../Pages/HomePage.xaml" />
 </mah:MetroWindow>
-

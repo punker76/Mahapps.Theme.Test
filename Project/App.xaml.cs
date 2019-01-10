@@ -11,12 +11,9 @@ namespace MahApps.Prism.Test
     {
         protected override void OnStartup(StartupEventArgs e)
         {
-            ThemeManager.AddAccent("CustomAccent", new Uri("pack://application:,,,/MahApps.Prism.Test;component/Styles/CustomAccent.xaml"));
-            ThemeManager.ChangeAppStyle(Application.Current, ThemeManager.GetAccent("CustomAccent"), ThemeManager.GetAppTheme("BaseDark"));
-
             base.OnStartup(e);
+
+            ThemeManager.AddAccent("CustomAccent", new Uri("pack://application:,,,/MahApps.Prism.Test;component/Styles/CustomAccent.xaml"));
         }
     }
-
-   
 }
