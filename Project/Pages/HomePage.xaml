@@ -6,6 +6,7 @@
       xmlns:local="clr-namespace:MahApps.Prism.Test.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
+      Style="{DynamicResource MetroPage}"
       Title="HomePage">
 
     <Grid>
